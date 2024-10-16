@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Overlay Effect to Add Grain and Blur */
+/* body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+} */
+
+/* Header Styling with Linear Gradient */
+header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+/* Product Container Styling */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Product Card Styling */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 240px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.product-card img {
+    max-width: 100%;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Title Styling */
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Price Styling */
+.product-price {
+    color: #007BFF;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Category and Description Styling */
+.product-category {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.product-form {
+    
+}
+
+.product-description {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 10px 0;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Rating Styling */
+.product-rating {
+    font-size: 0.9rem;
+    color: #FF9900;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
